@@ -9,6 +9,10 @@
     <body>
         <h1>2줄 3칸 기본 표 만들기</h1>
         <table border="1" width="50%">
+            <caption>
+                <strong>기본 테이블입나다.</strong><br>
+                2줄 3칸짜리 표입니다.
+            </caption>
             <!--1번줄-->
             <tr>
                 <td>1</td>
@@ -24,6 +28,11 @@
         </table>
         <hr>
         <h1>표에 제목 셀 만들기</h1>
+        <figure>
+            <figcaption>
+                표에 제목 셀 만들기
+            </figcaption>
+        </figure>
         <table border="1" width ="100%">
             <tr>
                 <th>학과</th>
@@ -55,5 +64,95 @@
                 <td>11</td>
             </tr>
         </table>
+        <!--thead, tbody, tfoot-->
+        <table border="1" width="100%">
+            <caption>2023학년 1학기<br>시간표</caption>
+            <colgroup>
+                <col span="6" style="background-color: white;"
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td></td>
+                    <td rowspan="2" style="background-color: greenyellow;">S/W프로그래밍사고</td>
+                    <td rowspan="2" style="background-color: greenyellow;">S/W프로그래밍사고</td>
+                    <td rowspan="2" style="background-color: orange;">공학적 글쓰기</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td rowspan="2" style="background-color: red;">컴퓨터 공학개론</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td rowspan="2" style="background-color: skyblue;">영화에게 영화를 묻다</td>
+                    <td></td>
+                    <td rowspan="2" style="background-color: purple;">성공사례로 배우는 창업</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td></td>
+                    <td style="background-color: red;">컴퓨터 공학개론</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td rowspan="2" style="background-color: yellow;">웹제작</td>
+                    <td rowspan="2" style="background-color: blue;">글로벌 직업탐구</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td></td>
+                    <td style="background-color: green;">대학생활과 진로탐색</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2" style="background-color: yellow;">웹제작</td>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>9</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">
+                        1교시는 9시 30입니다.
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
     </body>
 </html>

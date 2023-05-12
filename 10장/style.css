@@ -1,0 +1,68 @@
+/*문서 전체 글꼴은 맑은 고딕, 바깥 여백 5*/
+*{
+    font-family: "맑은 고딕";
+    margin: 5px;
+}
+/* header, footer 안쪽 여백 20, 배경 색상, 가운데 정렬 */
+header, footer{
+    padding: 20px;
+    background-color: aquamarine;
+    text-align: center;
+}
+/* nav 배경색, 가운데 정렬, 글자크기 18px, 진하게, 안쪽 여백 20px */
+nav{
+    background-color: beige;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+/* 하이퍼링크 밑줄 없음, 가로 길이 : 100px, 세로 길이 30px, 안쪽 여백 20 */
+a{
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    display: inline-block; /*블록요소는 크기 지정이 O, 인라인요소는 크기 지정이 안 되므로 "inline-block"을 사용해 크기를 지정해준다*/
+}
+a:link, a:visited{
+    color: black;
+}
+a:hover, a:active{
+    color: white;
+    background-color: gray;
+    text-decoration: underline;/*overline은 위쪽 줄, underline은 밑쪽 줄 생김*/
+}
+section{
+    background-color: rgb(27, 208, 202);
+    height: 200px;
+    width: 48%;
+    float: left;
+    border: 2px solid black;
+    color: white;
+    padding: 10px;
+}
+footer{
+    clear: both;
+}
+.C1{
+    padding: 5px;
+}
+#s1 h1{
+    background-color: rgb(184, 203, 100);
+}
+#s2 h1{
+    background-color: rgb(100, 203, 133);
+}
+#s3 h1{
+    background-color: rgb(100, 203, 164);
+}
+#s4 h1{
+    background-color: rgb(203, 116, 100);
+}
+#s5 h1{
+    background-color: rgb(100, 110, 203);
+}
+#s6 h1{
+    background-color: rgb(203, 100, 186);
+}

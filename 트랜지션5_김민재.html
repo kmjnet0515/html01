@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>변형3-김민재</title>
+        <style>
+            #ex{
+                width: 500px;
+                height: 150px;
+                margin: 0 auto;
+                border: 2px solid black;
+                float: left;
+                border-radius: 15px;
+                position: relative;
+                padding: 20px;
+            }
+            #ex:hover .box{
+                margin-left: 420px;
+                transform: rotate(720deg);
+            }
+            .box{
+                width: 60px;
+                height: 60px;
+                background-color: yellowgreen;
+                margin-bottom: 30px;
+                position: relative;
+            }
+            #no-delay{
+                transition-duration: 3s;
+                transition-delay: 0s;
+            }
+            #delay{
+                transition-duration: 3s;
+                transition-delay: 1s;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="ex">
+            <div class="box" id="no-delay">no-delay</div>
+            <div class="box" id="delay">delay</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>변형3-김민재</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+            }
+            .container{
+                border: 1px solid black;
+                float: left;
+                margin-top: 100px;
+                margin-left: 100px;
+                perspective: 300px;
+            }
+            .box1 {
+                background-color: antiquewhite;
+                transform: rotateY(45deg);
+            }
+            .box2{
+                background-color: aqua;
+                transform: rotateX(45deg);
+                transform-origin: left top;
+            }
+            #tr_style1{
+                transform-style: flat;
+            }
+            #tr_style2{
+                transform-style: preserve-3d;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box1" id="tr_style1">
+                <div class="box2">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box1" id="tr_style2">
+                <div class="box2">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
